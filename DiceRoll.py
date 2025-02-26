@@ -23,7 +23,7 @@ def main():
   num = 2
   for r in rolls:
     percent = round((r / numRolls)*100, 1)
-    print(num, ":", r, percent)
+    print(num, ":", r, "rolls and ", percent,"%")
     num = num + 1
 
 if __name__ == '__main__':
