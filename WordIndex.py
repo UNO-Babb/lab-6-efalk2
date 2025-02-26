@@ -13,6 +13,7 @@ def main():
     lineNum = lineNum + 1
     words = line.split()
     for word in words:
+      #process word to make uniform
       word = word.lower()
       word = word.replace("," , " ")
       word = word.replace("." , " ")
@@ -24,8 +25,7 @@ def main():
         wordList[word].append(lineNum)      #add to existing entry
       else:
         wordList[word] = [lineNum]          #add word to list
-
-  print(wordList)
+  #print results
   for word in wordList:
     print(word, wordList[word])
 
